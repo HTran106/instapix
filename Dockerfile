@@ -13,7 +13,7 @@ ENV SQLALCHEMY_ECHO=True
 # Set the directory for upcoming commands to /var/www
 WORKDIR /var/www
 # Copy all the files from your repo to the working directory
-COPY /app .
+COPY . .
 
 # Copy the built react app (it's built for us) from the
 # /react-app/build/ directory into your flasks app/static directory
